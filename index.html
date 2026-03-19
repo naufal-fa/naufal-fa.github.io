@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Web Developer</title>
+    <title>Portfolio | Engineer & Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Portfolio<span>.</span></div>
+        <div class="logo">Ardmi<span>Tech</span></div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -26,13 +27,39 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Halo, Saya <span class="highlight">Developer</span></h1>
-            <p>Saya membangun website yang responsif, modern, dan interaktif.</p>
+            <h1>Building the Future with <span class="highlight">Technology</span></h1>
+            <p>Saya adalah seorang Engineer dan Developer yang bersemangat dalam menggabungkan dunia fisik dan digital melalui Programming, IoT, Electrical Engineering, dan 3D Design.</p>
             <a href="#projects" class="btn">Lihat Karya Saya</a>
         </div>
         <div class="hero-image">
-            <div class="shape"></div>
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Developer Setup">
+            <div class="glow-orb"></div>
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tech Setup">
+        </div>
+    </section>
+
+    <section id="expertise" class="expertise">
+        <h2>Area <span class="highlight">Keahlian</span></h2>
+        <div class="expertise-grid">
+            <div class="expertise-card">
+                <i class="fas fa-code icon"></i>
+                <h3>Programming</h3>
+                <p>Pengembangan perangkat lunak, sistem backend, dan aplikasi web serta mobile yang efisien dan skalabel.</p>
+            </div>
+            <div class="expertise-card">
+                <i class="fas fa-network-wired icon"></i>
+                <h3>Internet of Things (IoT)</h3>
+                <p>Mengintegrasikan sensor, mikrokontroler, dan cloud untuk menciptakan sistem cerdas yang terhubung.</p>
+            </div>
+            <div class="expertise-card">
+                <i class="fas fa-microchip icon"></i>
+                <h3>Electrical</h3>
+                <p>Perancangan sirkuit, PCB, otomatisasi industri, dan analisis sistem kelistrikan yang andal.</p>
+            </div>
+            <div class="expertise-card">
+                <i class="fas fa-cube icon"></i>
+                <h3>3D Design</h3>
+                <p>Pemodelan 3D untuk prototyping, pencetakan 3D (3D Printing), dan desain produk mekanikal.</p>
+            </div>
         </div>
     </section>
 
@@ -40,51 +67,50 @@
         <h2>Tentang <span class="highlight">Saya</span></h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Saya adalah seorang web developer yang bersemangat menciptakan pengalaman digital yang luar biasa. Dengan fokus pada desain yang bersih, fungsionalitas yang kuat, dan performa optimal, saya siap membantu mewujudkan visi Anda menjadi kenyataan.</p>
+                <p>Sebagai seorang tech enthusiast dengan latar belakang teknik yang kuat, saya menyukai tantangan dalam memecahkan masalah yang kompleks. Kombinasi keterampilan saya di bidang software dan hardware memungkinkan saya untuk merancang solusi dari tahap konsep desain 3D, perakitan elektronik, hingga pemrograman sistem kendalinya.</p>
                 <div class="skills">
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">Git / GitHub</span>
+                    <span class="skill-tag">C++ / Python / JS</span>
+                    <span class="skill-tag">Arduino / ESP32</span>
+                    <span class="skill-tag">Altium / Eagle</span>
+                    <span class="skill-tag">SolidWorks / Fusion360</span>
+                    <span class="skill-tag">MQTT / REST API</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="projects">
-        <h2>Karya <span class="highlight">Terbaru</span></h2>
+        <h2>Karya & <span class="highlight">Project</span></h2>
         <div class="project-grid">
             <div class="project-card">
-                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1555664424-778a1e5e1b48?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
                 <div class="project-info">
-                    <h3>Project Dashboard</h3>
-                    <p>Aplikasi dashboard analitik modern dengan visualisasi data interaktif.</p>
-                    <a href="#" class="view-btn"><i class="fas fa-external-link-alt"></i></a>
+                    <h3>Smart Home Gateway</h3>
+                    <p>Sistem IoT terpusat berbasi ESP32 untuk pemantauan daya listrik dan kontrol perangkat rumah tangga via web.</p>
+                    <span class="badge">IoT & Web</span>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1581092335397-9583eb92d232?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
                 <div class="project-info">
-                    <h3>E-Commerce App</h3>
-                    <p>Platform belanja online dengan fitur keranjang dan pembayaran yang aman.</p>
-                    <a href="#" class="view-btn"><i class="fas fa-external-link-alt"></i></a>
+                    <h3>Custom PCB Controller</h3>
+                    <p>Desain skematik dan PCB multi-layer untuk kontroler robotika industri dengan mikrokontroler STM32.</p>
+                    <span class="badge">Electrical</span>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1615826932727-817abcbda64d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
                 <div class="project-info">
-                    <h3>Portfolio Web</h3>
-                    <p>Desain UI/UX yang elegan untuk portofolio profesional.</p>
-                    <a href="#" class="view-btn"><i class="fas fa-external-link-alt"></i></a>
+                    <h3>3D Printed Drone Chassis</h3>
+                    <p>Pemodelan 3D dan optimalisasi topologi untuk rangka drone super ringan berbasis bahan serat karbon filamen.</p>
+                    <span class="badge">3D Design</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <h2>Hubungi <span class="highlight">Saya</span></h2>
+        <h2>Mari <span class="highlight">Berkolaborasi</span></h2>
         <div class="contact-container">
             <form class="contact-form">
                 <div class="input-group">
@@ -94,21 +120,20 @@
                     <input type="email" placeholder="Email Anda" required>
                 </div>
                 <div class="input-group">
-                    <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                    <textarea placeholder="Ide Project Anda" rows="5" required></textarea>
                 </div>
                 <button type="submit" class="btn">Kirim Pesan</button>
             </form>
             <div class="social-links">
                 <a href="#"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Portfolio. Dibuat dengan <i class="fas fa-heart" style="color: #ff3366;"></i></p>
+        <p>&copy; 2026 ArdmiTech. Engineered with <i class="fas fa-bolt" style="color: var(--highlight);"></i></p>
     </footer>
 
     <script src="script.js"></script>
