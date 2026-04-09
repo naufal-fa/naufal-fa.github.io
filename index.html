@@ -3,137 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Engineer & Developer</title>
+    <title>ArdmiTech | Engineer & Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="bg-animated">
+        <div class="bg-gradient"></div>
+        <div class="bg-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="orb orb-4"></div>
+            <div class="orb orb-5"></div>
+        </div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">Ardmi<span>Tech</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+        <div class="nav-container">
+            <div class="logo">Ardmi<span>Tech</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Building the Future with <span class="highlight">Technology</span></h1>
+            <div class="hero-badge glass-subtle">
+                <i class="fas fa-bolt"></i> Engineer & Developer
+            </div>
+            <h1>Building the Future<br>with <span class="gradient-text">Technology</span></h1>
             <p>Saya adalah seorang Engineer dan Developer yang bersemangat dalam menggabungkan dunia fisik dan digital melalui Programming, IoT, Electrical Engineering, dan 3D Design.</p>
-            <a href="#projects" class="btn">Lihat Karya Saya</a>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>Lihat Karya Saya</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-glass">
+                    <span>Hubungi Saya</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">4+</span>
+                    <span class="stat-label">Bidang Keahlian</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Project Selesai</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Tahun Pengalaman</span>
+                </div>
+            </div>
         </div>
-        <div class="hero-image">
-            <div class="glow-orb"></div>
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tech Setup">
+        <div class="hero-visual">
+            <div class="hero-card glass">
+                <div class="card-glow"></div>
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tech Setup">
+            </div>
+            <div class="floating-tag glass-subtle tag-1">
+                <i class="fas fa-code"></i> Full Stack
+            </div>
+            <div class="floating-tag glass-subtle tag-2">
+                <i class="fas fa-microchip"></i> IoT
+            </div>
+            <div class="floating-tag glass-subtle tag-3">
+                <i class="fas fa-cube"></i> 3D
+            </div>
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <span class="section-tag glass-subtle">Tentang Saya</span>
+            <h2>Passionate <span class="gradient-text">Tech Enthusiast</span></h2>
+        </div>
+        <div class="about-card glass">
+            <div class="about-content">
+                <p>Sebagai seorang tech enthusiast dengan latar belakang teknik yang kuat, saya menyukai tantangan dalam memecahkan masalah yang kompleks. Kombinasi keterampilan saya di bidang software dan hardware memungkinkan saya untuk merancang solusi dari tahap konsep desain 3D, perakitan elektronik, hingga pemrograman sistem kendalinya.</p>
+                <div class="skills-grid">
+                    <div class="skill-chip glass-subtle"><i class="fas fa-code"></i> C++ / Python / JS</div>
+                    <div class="skill-chip glass-subtle"><i class="fas fa-microchip"></i> Arduino / ESP32</div>
+                    <div class="skill-chip glass-subtle"><i class="fas fa-drafting-compass"></i> Altium / Eagle</div>
+                    <div class="skill-chip glass-subtle"><i class="fas fa-cube"></i> SolidWorks / Fusion360</div>
+                    <div class="skill-chip glass-subtle"><i class="fas fa-network-wired"></i> MQTT / REST API</div>
+                    <div class="skill-chip glass-subtle"><i class="fas fa-globe"></i> Laravel / React</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
     <section id="expertise" class="expertise">
-        <h2>Area <span class="highlight">Keahlian</span></h2>
+        <div class="section-header">
+            <span class="section-tag glass-subtle">Keahlian</span>
+            <h2>Area <span class="gradient-text">Expertise</span></h2>
+        </div>
         <div class="expertise-grid">
-            <div class="expertise-card">
-                <i class="fas fa-code icon"></i>
+            <div class="expertise-card glass" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="fas fa-code"></i>
+                </div>
                 <h3>Programming</h3>
                 <p>Pengembangan perangkat lunak, sistem backend, dan aplikasi web serta mobile yang efisien dan skalabel.</p>
+                <div class="card-footer">
+                    <span class="tech-dot"></span>
+                    <span class="tech-label">Web & Mobile Dev</span>
+                </div>
             </div>
-            <div class="expertise-card">
-                <i class="fas fa-network-wired icon"></i>
-                <h3>Internet of Things (IoT)</h3>
+            <div class="expertise-card glass" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>Internet of Things</h3>
                 <p>Mengintegrasikan sensor, mikrokontroler, dan cloud untuk menciptakan sistem cerdas yang terhubung.</p>
+                <div class="card-footer">
+                    <span class="tech-dot"></span>
+                    <span class="tech-label">Smart Systems</span>
+                </div>
             </div>
-            <div class="expertise-card">
-                <i class="fas fa-microchip icon"></i>
-                <h3>Electrical</h3>
+            <div class="expertise-card glass" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h3>Electrical Engineering</h3>
                 <p>Perancangan sirkuit, PCB, otomatisasi industri, dan analisis sistem kelistrikan yang andal.</p>
+                <div class="card-footer">
+                    <span class="tech-dot"></span>
+                    <span class="tech-label">Circuit & PCB Design</span>
+                </div>
             </div>
-            <div class="expertise-card">
-                <i class="fas fa-cube icon"></i>
+            <div class="expertise-card glass" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
                 <h3>3D Design</h3>
                 <p>Pemodelan 3D untuk prototyping, pencetakan 3D (3D Printing), dan desain produk mekanikal.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2>Tentang <span class="highlight">Saya</span></h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Sebagai seorang tech enthusiast dengan latar belakang teknik yang kuat, saya menyukai tantangan dalam memecahkan masalah yang kompleks. Kombinasi keterampilan saya di bidang software dan hardware memungkinkan saya untuk merancang solusi dari tahap konsep desain 3D, perakitan elektronik, hingga pemrograman sistem kendalinya.</p>
-                <div class="skills">
-                    <span class="skill-tag">C++ / Python / JS</span>
-                    <span class="skill-tag">Arduino / ESP32</span>
-                    <span class="skill-tag">Altium / Eagle</span>
-                    <span class="skill-tag">SolidWorks / Fusion360</span>
-                    <span class="skill-tag">MQTT / REST API</span>
+                <div class="card-footer">
+                    <span class="tech-dot"></span>
+                    <span class="tech-label">CAD & Prototyping</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2>Karya & <span class="highlight">Project</span></h2>
+        <div class="section-header">
+            <span class="section-tag glass-subtle">Portfolio</span>
+            <h2>Karya & <span class="gradient-text">Project</span></h2>
+        </div>
         <div class="project-grid">
-            <div class="project-card">
-                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1555664424-778a1e5e1b48?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+            <div class="project-card glass">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Smart Home Gateway">
+                    <div class="project-overlay">
+                        <span class="badge">IoT & Web</span>
+                    </div>
+                </div>
                 <div class="project-info">
                     <h3>Smart Home Gateway</h3>
-                    <p>Sistem IoT terpusat berbasi ESP32 untuk pemantauan daya listrik dan kontrol perangkat rumah tangga via web.</p>
-                    <span class="badge">IoT & Web</span>
+                    <p>Sistem IoT terpusat berbasis ESP32 untuk pemantauan daya listrik dan kontrol perangkat rumah tangga via web.</p>
+                    <div class="project-techs">
+                        <span>ESP32</span>
+                        <span>MQTT</span>
+                        <span>Web</span>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1581092335397-9583eb92d232?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+            <div class="project-card glass">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Custom PCB Controller">
+                    <div class="project-overlay">
+                        <span class="badge">Electrical</span>
+                    </div>
+                </div>
                 <div class="project-info">
                     <h3>Custom PCB Controller</h3>
                     <p>Desain skematik dan PCB multi-layer untuk kontroler robotika industri dengan mikrokontroler STM32.</p>
-                    <span class="badge">Electrical</span>
+                    <div class="project-techs">
+                        <span>STM32</span>
+                        <span>Altium</span>
+                        <span>PCB</span>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1615826932727-817abcbda64d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+            <div class="project-card glass">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1615826932727-817abcbda64d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="3D Printed Drone Chassis">
+                    <div class="project-overlay">
+                        <span class="badge">3D Design</span>
+                    </div>
+                </div>
                 <div class="project-info">
                     <h3>3D Printed Drone Chassis</h3>
                     <p>Pemodelan 3D dan optimalisasi topologi untuk rangka drone super ringan berbasis bahan serat karbon filamen.</p>
-                    <span class="badge">3D Design</span>
+                    <div class="project-techs">
+                        <span>Fusion360</span>
+                        <span>FDM</span>
+                        <span>Carbon</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Mari <span class="highlight">Berkolaborasi</span></h2>
-        <div class="contact-container">
-            <form class="contact-form">
-                <div class="input-group">
-                    <input type="text" placeholder="Nama Anda" required>
-                </div>
-                <div class="input-group">
-                    <input type="email" placeholder="Email Anda" required>
-                </div>
-                <div class="input-group">
-                    <textarea placeholder="Ide Project Anda" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Kirim Pesan</button>
-            </form>
+        <div class="section-header">
+            <span class="section-tag glass-subtle">Get in Touch</span>
+            <h2>Mari <span class="gradient-text">Berkolaborasi</span></h2>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-card glass">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label>Nama</label>
+                        <input type="text" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Pesan</label>
+                        <textarea placeholder="Ceritakan ide project Anda..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Kirim Pesan</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
             <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-btn glass-subtle" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-btn glass-subtle" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-btn glass-subtle" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 ArdmiTech. Engineered with <i class="fas fa-bolt" style="color: var(--highlight);"></i></p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo">Ardmi<span>Tech</span></div>
+            <p>&copy; 2026 ArdmiTech. Engineered with <i class="fas fa-bolt gradient-text"></i></p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
